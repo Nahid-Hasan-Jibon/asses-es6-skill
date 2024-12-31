@@ -22,4 +22,10 @@
 
 - Live link to the deployed project.
 
+live link- 
+
+Git-Hub : https://nahid-hasan-jibon.github.io/asses-es6-skill/#main-sec
+
+vercel :https://asses-es6-skill.vercel.app/
+
 

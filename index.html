@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.webp">
+    <title>Peddy</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+  .active-btn{
+    border:2px solid #0E7A81; 
+    border-radius:9999px;
+    padding:0.5rem;
+    width: 8rem;
+    background-color:rgba(14, 122, 129, 0.1);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    
+    
+  }
+  
+</style>
+</head>
+<body class="mx-2 md:mx-8 lg:mx-12">
+    <header class="">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <img src="images/logo.webp" alt="">
+                  <a class="btn btn-ghost text-2xl">Peddy</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="border rounded-full p-2"><img src="icon/Frame.png" alt=""></a>
+                </div>
+              </div>
+        </nav>
+        <!-- banner section -->
+         <section class=" text-center lg:mt-20">
+            <div class="space-y-5 md:space-y-10 lg:space-y-10">
+                <h3 class="text-[#13131399] text-2xl">Bringing Families Together ❤️‍🔥</h3>
+            <h1 class=" text-4xl lg:text-6xl font-bold">Your Path to Adoption <br> Starts Here</h1>
+            <p class="text-[text-[#131313b3]">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            <button class="  btn bg-[#0E7A81] text-white text-lg font-semibold" onclick="location.href='#main-sec'">View More</button>
+            </div>
+         </section>
+
+         <!-- hero -->
+          <section class="flex justify-center items-center md:min-h-screen  lg:min-h-screen ">
+            <img class="" src="images/pet.webp" alt="">
+          </section>
+
+
+
+    </header>
+    <main id="main-sec">
+      
+        <!-- main section text section  -->
+         <section  class="text-center mt-6">
+            <div>
+                <h1 class="text-5xl font-semibold">Adopt  Your  Best Friend</h1>
+                <p class="text-sm mt-12 text-[#131313b3]">It is a long established fact that a reader will be distracted by the readable content of a page  <br> when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+         </section>
+
+         <!-- category dynamic btn section -->
+          <section id="categories" class="flex gap-5 justify-between items-center py-3 mt-6 mx-4 flex-wrap">
+
+          </section>
+
+          <!-- sort section -->
+           <section class="mt-6">
+            <div class="flex justify-between items-center mx-4">
+              <p class="text-2xl">Best Deal For you</p>
+              <button id="sort-btn" class="bg-[#0E7A81] p-2 w-32 rounded-xl text-white text-xl ">Sort</button>
+
+            </div>
+           </section>
+
+           <!-- Loading spinner section -->
+           <div class="text-center">
+            <span id="loading-spinner" class="loading loading-bars loading-lg hidden"></span>
+           </div>
+
+          <!-- card and aside section -->
+           <section class="flex justify-center border lg:p-2 rounded-xl gap-2 mt-8 ">
+            <!-- pet cards -->
+            <div id="pet-cards" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto py-8 w-4/5 gap-4  ">
+
+            </div>
+
+            <!-- pet aside -->
+              <div class="border p-2 w-1/5 hidden md:block lg:block ">
+                <div id="aside" class=" p-2 grid md:grid-cols-1 lg:grid-cols-2 space-y-1 space-x-1" >
+                
+                
+                </div>
+              </div>
+
+           </section>
+
+           <!-- details Modal starts -->
+            <section>
+              <dialog id="detailsModal" class="modal  sm:modal-middle">
+                <div class="modal-box">
+                  <div id="detailsModalContent">
+
+                   
+                  </div>
+                  
+                  <div class="">
+                    <form method="dialog">
+                      
+                      <button class="btn w-full bg-[#0E7A811A] text-[#0E7A81] ">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+             
+
+
+            </section>
+            <section>
+              <dialog id="adoptedModal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <div id="adoptedModalContent">
+              
+                  </div>
+                  
+                  <div class="modal-action">
+                    <form method="dialog">
+                      
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+             
+
+
+            </section>
+            
+
+           <!-- details Modal ends -->
+
+
+    </main>
+     <footer class="bg-[#131313] text-white mt-12">
+
+        <section class="flex justify-evenly   flex-col md:flex-row lg:flex-row mx-5 py-12 gap-4 space-y-8 ">
+          <div>
+  
+            <div class="flex gap-2">
+              <img src="images/logo.webp" alt="">
+              <h1 class="text-2xl">Peddy</h1>
+            </div>
+
+            <div class="mt-4">
+                <p>Location: av. Washington 165,NY CA 54003</p>
+            <p>Phone: +31 85 964 47 25</p>
+            <p>Email: info@yourdomain.com</p>
+  
+            <p>Openings hours: 9.00 AM - 5.00 PM</p>
+  
+            <div class="mt-4 flex items-center gap-3">
+             <a href=""> <img src="icon/fb.png" alt=""></a>
+              <a href=""><img src="icon/x.png" alt=""></a>
+              <a href=""><img src="icon/youtube.png" alt=""></a>
+              <a href=""><img src="icon/instagram.png" alt=""></a>
+            </div>
+            </div>
+            
+  
+          </div>
+  
+          <!-- 2nd part div -->
+  
+          <div>
+  
+            <h2 class="text-xl">Useful Links</h2>
+  
+            <div class="mt-4 grid grid-cols-1">
+              <a href="">Home</a>
+              <a href="">About Us</a>
+              <a href="">Animals </a>
+              <a href=""> Foundation</a>
+              <a href="">Contact</a>
+            </div>
+  
+          
+  
+  
+          </div>
+  
+          <!-- 3rd part -->
+           <div>
+  
+            <h2 class="text-xl">Drop a Message</h2>
+            <div class=" mt-4">
+              <input class="rounded p-2 bg-gray-500 w-full" placeholder="Enter your email" type="email" name="" id="">
+  
+              <button class="mt-4 block bg-[#0E7A81;] p-2 w-full rounded">Subscribe</button>
+            </div>
+  
+           </div>
+  
+        
+        </section>
+       
+            
+  
+  
+      </footer>
+    
+    
+    <script src="js/script.js"></script>
+    <script src="js/test.js"></script>
+    
+</body>
+</html>
